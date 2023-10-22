@@ -5,10 +5,8 @@ export const Register = (props) => {
     const [pass, setPass] = useState('');
     const [name, setName] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(email);
-    }
+ const handleSubmit = (e) => { e.preventDefault(); console.log(e); window.alert("You have sucsessfully logged in with " + email); };
+
 
     return (
         <div className="auth-form-container">
